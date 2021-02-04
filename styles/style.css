@@ -31,6 +31,15 @@ input {
   margin: 5px 5px 5px 5px;
 }
 
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 .new-book {
   display: block;
   background-color: #3bff77;
@@ -42,18 +51,15 @@ input {
   border: 2px black solid;
 }
 
-.new-book:hover {
-  cursor: pointer;
-}
-
 .popup {
-  display: flex;
+  display: none;
   flex-direction: column;
   position: fixed;
   top: 50%;
   left: 50%;
   width: 400px;
   height: 300px;
+  z-index: 2;
   background-color: #fdee6a;
   border-radius: 10px;
   text-align: center;
@@ -150,6 +156,15 @@ input:checked + .slider:before {
   border: 2px black solid;
 }
 
-.submit:hover {
-  cursor: pointer;
+.greyout {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: none;
+  background-color: black;
+  filter: alpha(opacity=30);
+  opacity: 0.5;
 }
