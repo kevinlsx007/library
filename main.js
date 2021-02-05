@@ -6,6 +6,7 @@ const titleInput = document.querySelector('input[name="title"]');
 const authorInput = document.querySelector('input[name="author"]');
 const pagesInput = document.querySelector('input[name="pages"]');
 const readCheck = document.querySelector('input[name="read"]');
+const displayArea = document.querySelector('.display');
 
 let myLibrary = [];
 
