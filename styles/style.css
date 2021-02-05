@@ -167,7 +167,7 @@ input:checked + .slider:before {
   opacity: 0.5;
 }
 
-.card-container {
+.book-shelf {
   display: grid;
   grid-template-columns: repeat(4, auto);
   align-items: center;
